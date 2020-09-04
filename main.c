@@ -3,10 +3,9 @@
 #include <stdio.h>
 
 int main(void) {
-  char *temp = readline("Enter temperature in celsius: ");
-  double celsius, fahrenheit;
-  celsius = atof(temp);
-  fahrenheit = (celsius*9/5)+32;
-  printf("%f° in Celsius is equicalent to %f° Fahrenheit\n",celsius, fahrenheit);
+  double temp = atof(readline("Enter temperature in celsius: "));
+ 
+  printf("%f° in Celsius is equicalent to %f° Fahrenheit\n",temp,(temp * 9/5 +32));
+
   return 0;
 }
